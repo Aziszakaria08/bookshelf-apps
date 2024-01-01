@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Google font start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <!-- Google font end -->
+
+        <!-- Boostrap Icon start -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+        <!-- Boostrap Icon end -->
+
+        <!-- My Own CSS start -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- My Own CSS end -->
+
+        <title>Bookshelf App</title>
+    </head>
+    <body>
+        <header>
+            <h1>Bookshelf App</h1>
+        </header>
+
+        <main>
+            <div class="search-bar">
+                <div class="search-bar__icon">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="search-bar__text">
+                    <input type="text" id="cari" name="cari" placeholder="Cari buku/tahun" />
+                </div>
+            </div>
+            <div class="content-wrapper">
+                 <div class="form-wrapper">
+                    <h2>Tambah Buku</h2>
+                    <form id="form">
+                        <div class="form-box">
+                            <input id="title" type="text" name="title" required="true" />
+                            <label for="title">Judul</label>
+                        </div>
+                        <div class="form-box">
+                            <input id="author" type="text" name="author" required="true" />
+                            <label for="author">Penulis</label>
+                        </div>
+                        <div class="form-box">
+                            <input id="year" type="number" name="year" required="true" />
+                            <label for="year">Tahun</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="isComplite" type="checkbox" name="isComplite" />
+                            <label for="isComplite">Sudah selesai dibaca</label>
+                        </div>
+                        <button type="submit" name="submit" class="form-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="data-wrapper">
+                    <div class="data-wrapper__belumDibaca">
+                        <h2>Belum Selesai di Baca</h2>
+                        <div id="belumDibaca" class="data-box"></div>
+                    </div>
+                    <div class="data-wrapper__sudahDibaca">
+                        <h2>Sudah Selesai di Baca</h2>
+                        <div id="sudahDibaca" class="data-box"></div>
+                    </div>
+                </div>
+               
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2023. Created by
+                <a href="https://www.dicoding.com/users/ariefrh1001/">Azis Zakaria</a>.
+            </p>
+        </footer>
+        <script src="./js/main.js" type="module"></script>
+        <script src="./js/storage.js" type="module"></script>
+        <script src="./js/dom.js" type="module"></script>
+        <script src="./js/event.js" type="module"></script>
+        <script src="./js/crud.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
