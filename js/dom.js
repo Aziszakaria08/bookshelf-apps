@@ -25,7 +25,7 @@ function makeElement(dataBooks) {
 
     // create element depends
     if (isComplite) {
-        img.setAttribute("src", "../images/open-book.png");
+        img.setAttribute("src", "./images/open-book.png");
         img.setAttribute("alt", "book that has been read");
         img.classList.add("img-size");
         divImg.classList.add("data-item__info__img");
@@ -38,7 +38,7 @@ function makeElement(dataBooks) {
         divContainerAll.classList.add("data-item");
         divContainerAll.append(divImgText, divBtn);
     } else {
-        img.setAttribute("src", "../images/book.png");
+        img.setAttribute("src", "./images/book.png");
         img.setAttribute("alt", "unread book");
         img.classList.add("img-size");
         divImg.classList.add("data-item__info__img");
